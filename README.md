@@ -23,23 +23,23 @@ Our project is targeted to find, whether product reviews are overall positive, n
 
 We wrote two chaining Mappers and Reducers for achieving the task. 
 
-<u>Mapper1</u>
+<strong>Mapper1</strong>
 <ul>•	setup a distributed cache (which has contents AFNIN.txt)</ul> 
 <ul>•	Get datafile (ProductReviews.csv) as a command line argument.</ul> 
 <ul>•	Tokenize <reviews> string, and compare tokens in the distributed hash table  if found then get the polarity of a token, and keep on adding the polarity.</ul>
  
-<u>Reducer1</u>
+<strong>Reducer1</strong>
 <ul>•	Write intermediate output:</ul>
-<code>•	<review text, original rating, rating value, newly counted polarity></code>
+<ul><code>•	<review text, original rating, rating value, newly counted polarity></code></ul>
 
-<p>If Mapper1 and Reducer1 execute successfully, then the execution pointer will be set to Mapper2. (note that we will have intermediate output from Reducer2)</p>
+If Mapper1 and Reducer1 execute successfully, then the execution pointer will be set to Mapper2. (note that we will have intermediate output from Reducer2)
 
-<u>Mapper2</u>
+<strong>Mapper2</strong>
 <ul>•	Get “newly counted polarity” and compare.</ul>
 <ul>•	If = 0 then <samp>“natural”</samp> , if > 0 then <samp>“positive”</samp>, else <samp>“negative”.</samp></ul>
 <ul>•	For each record in intermediate output we will have either positive, negative or natural.</ul>
 
-<u>Reducer2</u>
+<strong>Reducer2</strong>
 <ul>•	Count number of positives, negatives and natural.</ul>
 <ul>•	Count will show overall sentiment analysis.</ul>
 </p>
