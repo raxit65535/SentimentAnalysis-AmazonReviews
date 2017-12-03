@@ -36,7 +36,7 @@ If Mapper1 and Reducer1 execute successfully, then the execution pointer will be
 
 Mapper2
 <ul>•	Get “newly counted polarity” and compare.</ul>
-<ul>•	If = 0 then “natural” , if > 0 then “positive”, else “negative”.</ul>
+<ul>•	If = 0 then <samp>“natural”</samp> , if > 0 then <samp>“positive”</samp>, else <samp>“negative”.</samp></ul>
 <ul>•	For each record in intermediate output we will have either positive, negative or natural.</ul>
 
 Reducer2
