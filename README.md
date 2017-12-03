@@ -30,7 +30,7 @@ We wrote two chaining Mappers and Reducers for achieving the task.
  
 <strong>Reducer1</strong>
 <ul>•	Write intermediate output:</ul>
-<code>•	<review text, original rating, rating value, newly counted polarity></code>
+<code><review text, original rating, rating value, newly counted polarity></code>
 
 If Mapper1 and Reducer1 execute successfully, then the execution pointer will be set to Mapper2. (note that we will have intermediate output from Reducer2)
 
