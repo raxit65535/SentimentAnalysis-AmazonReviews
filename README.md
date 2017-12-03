@@ -1,7 +1,7 @@
 # <i>SentimentAnalysis-AmazonReviews</i>
 
 <h3>Introduction to project</h3>
-<p>Project implementation includes configuring a cluster of Hadoop, and run a MapReduce batch job in the Hadoop daemons. Hadoop is basically an open source software framework used for distributed data storage and data processing. It uses MapReduce programming model for processing the data. Through this project we are elaborating power of Hadoop, regarding storing the data in the distributed manner and using parallel processing concepts.
+<p>Project implementation includes configuring a cluster of Hadoop, and run a MapReduce batch job in the Hadoop daemons. <dfn>Hadoop</dfn> is basically an open source software framework used for distributed data storage and data processing. It uses MapReduce programming model for processing the data. Through this project we are elaborating power of Hadoop, regarding storing the data in the distributed manner and using parallel processing concepts.
 <br>In our Project, we are running a MapReduce batch job to perform sentiment analysis on a sample set of data, which contains a review of Amazon product named “Kindle.” (We have grabbed the dataset from official website of Amazon). Further, we are using the Afnin.txt file for counting polarity of each tokenized reviews. Both the data sources are opensource. (both the data-sets are in the project repository)</br>
 We are using Virtual Box for setting up a hadoop in psuedo distributed mode. The Virtual Box machine runs on Ubuntu 17.04 operating system. Further, we have configured Hadoop-2.8.1 in Virtual Box instance. 
 The goal is to execute MapReduce batch job for Sentiment Analysis and provide the analysis result in Graphical format. </p>
@@ -29,7 +29,7 @@ Mapper1
 <ul>•	Tokenize <reviews> string, and compare tokens in the distributed hash table  if found then get the polarity of a token, and keep on adding the polarity.</ul>
  
 Reducer1
-•	Write intermediate output:
+<ul>•	Write intermediate output:</ul>
 <code>•	<review text, original rating, rating value, newly counted polarity></code>
 
 If Mapper1 and Reducer1 execute successfully, then the execution pointer will be set to Mapper2. (note that we will have intermediate output from Reducer2)
